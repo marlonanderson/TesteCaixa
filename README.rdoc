@@ -1,0 +1,6 @@
+== README
+
+Este README normalmente documentaria quaisquer etapas necessárias para obter o
+aplicativo instalado e funcionando .
+ Essa aplicação enquadra-se como teste da empresa NOBE SISTEMAS para fins de programador Ruby.
+

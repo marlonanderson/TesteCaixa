@@ -1,0 +1,13 @@
+<h2>Conta - <%= @conta.codigo %></h2>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @conta.cliente.nome %>
+</p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @conta.descricao %>
+</p>
+
+<%= link_to 'Voltar', cliente_path(@cliente) %>

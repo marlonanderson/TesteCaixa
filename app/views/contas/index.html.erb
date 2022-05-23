@@ -1,0 +1,35 @@
+<fieldset>
+  <legend><h3>Contas:</h3></legend>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Código</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @contas.each do |conta| %>
+        <tr>
+          <td><%= conta.descricao %></td>
+          <td><%= conta.codigo %></td>
+          <td><%= link_to 'Editar', edit_cliente_conta_path(@cliente, conta) %></td>
+          <td><%= link_to 'Saldo', cliente_conta_saldo_show_path(@cliente, conta) %></td>
+          <td><%= link_to 'Extrato', cliente_conta_extrato_show_path(@cliente, conta) %></td>
+          <td><%= link_to 'Saque', new_cliente_conta_movimentacao_path(@cliente, conta, :tipo => 'S') %></td>
+          <td><%= link_to 'Transferência', new_cliente_conta_movimentacao_path(@cliente, conta, :tipo => 'T') %></td>
+          <td>
+            <%= link_to 'Desativar conta?', cliente_conta_path(@cliente, conta), method: :delete,
+                        data: { confirm: 'Você tem certeza que deseja desativar a conta '+conta.codigo+'?' } %>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</fieldset>
