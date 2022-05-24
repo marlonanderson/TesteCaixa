@@ -4,3 +4,6 @@ Este README normalmente documentaria quaisquer etapas necessárias para obter o
 aplicativo instalado e funcionando .
  Essa aplicação enquadra-se como teste da empresa NOBE SISTEMAS para fins de programador Ruby.
 
+Endereço heroku : https://dashboard.heroku.com/apps/testecaixanob
+https://git.heroku.com/testecaixanob.git
+https://testecaixanob.herokuapp.com/
