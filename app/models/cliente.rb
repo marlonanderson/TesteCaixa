@@ -3,7 +3,7 @@ class Cliente < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable e :omniauthable
   devise :database_authenticatable,
 				 :registerable,
-         :recoverable,
+                 :recoverable,
 				 :rememberable,
 				 :trackable,
 				 :validatable
