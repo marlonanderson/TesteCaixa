@@ -1,9 +1,9 @@
 class Cliente < ActiveRecord::Base
-  # Inclui módulos de projeto padrão. Outros disponíveis são:
-  # :confirmable, :lockable, :timeoutable e :omniauthable
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable,
 				 :registerable,
-                 :recoverable,
+         :recoverable,
 				 :rememberable,
 				 :trackable,
 				 :validatable
