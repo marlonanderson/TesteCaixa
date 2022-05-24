@@ -28,7 +28,7 @@ group :development, :test do
   gem 'minitest-rails'
   gem 'guard'
   gem 'guard-minitest'
-  gem 'ZenTest', '4.11.0'
+  
   gem 'autotest', '4.4.6'
   gem 'autotest-rails', '4.2.1'
   gem 'rspec-rails', '~> 3.8'
