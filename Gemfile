@@ -42,7 +42,7 @@ end
 
 gem 'coffee-script-source', '1.8.0'  if Gem.win_platform? 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
