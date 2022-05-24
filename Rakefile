@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-TESTENOBECX::Application.load_tasks
+TESTECAIXA::Application.load_tasks
